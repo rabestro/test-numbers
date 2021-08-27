@@ -1,13 +1,13 @@
 package lv.id.jc.numbers.property
 
 import spock.lang.Specification
+import spock.lang.Subject
 
 class BuzzTest extends Specification {
+    @Subject
+    Property property = new Buzz()
 
     def "expects that #number is a buzz number"() {
-        given:
-        def property = new Buzz()
-
         expect:
         property.test(number as long)
 
@@ -16,9 +16,6 @@ class BuzzTest extends Specification {
     }
 
     def "expects that #number is not a buzz number "() {
-        given:
-        def property = new Buzz()
-
         expect:
         !property.test(number as int)
 
@@ -27,9 +24,6 @@ class BuzzTest extends Specification {
     }
 
     def "expects that BigInteger #number is a buzz number "() {
-        given:
-        def property = new Buzz()
-
         expect:
         property.test(number as BigInteger)
 
