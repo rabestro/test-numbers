@@ -4,7 +4,7 @@ import spock.lang.Specification
 
 class BuzzTest extends Specification {
 
-    def "expects that #number is a buzz number "() {
+    def "expects that #number is a buzz number"() {
         given:
         def property = new Buzz()
 
