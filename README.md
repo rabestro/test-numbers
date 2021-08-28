@@ -1,2 +1,2 @@
 # test-numbers
-The test project to explore Spock Framework
+This is a project to explore the Spock framework
