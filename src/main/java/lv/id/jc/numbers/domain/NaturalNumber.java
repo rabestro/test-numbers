@@ -1,4 +1,4 @@
-package lv.id.jc.numbers;
+package lv.id.jc.numbers.domain;
 
 import java.math.BigInteger;
 import java.util.regex.Pattern;

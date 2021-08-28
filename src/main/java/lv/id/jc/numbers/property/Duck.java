@@ -8,4 +8,9 @@ public class Duck implements Property {
     public boolean test(BigInteger bigInteger) {
         return bigInteger.toString().indexOf('0') > -1;
     }
+
+    @Override
+    public boolean test(long number) {
+        return Long.toString(number).indexOf('0') > -1;
+    }
 }

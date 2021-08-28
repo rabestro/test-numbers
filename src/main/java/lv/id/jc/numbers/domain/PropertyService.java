@@ -1,4 +1,4 @@
-package lv.id.jc.numbers;
+package lv.id.jc.numbers.domain;
 
 import lv.id.jc.numbers.property.Property;
 

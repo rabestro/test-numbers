@@ -1,5 +1,6 @@
 package lv.id.jc.numbers
 
+import lv.id.jc.numbers.domain.PropertyService
 import spock.lang.Specification
 
 import java.util.stream.Stream

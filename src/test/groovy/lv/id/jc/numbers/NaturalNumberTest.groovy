@@ -1,5 +1,6 @@
 package lv.id.jc.numbers
 
+import lv.id.jc.numbers.domain.NaturalNumber
 import spock.lang.Specification
 
 class NaturalNumberTest extends Specification {
