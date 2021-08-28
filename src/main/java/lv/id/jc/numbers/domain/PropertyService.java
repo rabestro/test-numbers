@@ -18,4 +18,9 @@ public class PropertyService {
     public Set<String> keySet() {
         return properties.keySet();
     }
+
+    public Property get(String name) {
+        return properties.get(name);
+    }
+
 }
