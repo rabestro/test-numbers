@@ -11,4 +11,6 @@ class NaturalNumberTest extends Specification {
         where:
         value << ["1", "+1", "01", "001", "+001", "2", "320", "+00023003210900"]
     }
+
+
 }
