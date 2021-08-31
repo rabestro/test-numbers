@@ -2,6 +2,7 @@ package lv.id.jc.numbers.domain;
 
 import lv.id.jc.numbers.property.Property;
 
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 import java.util.function.Function;
@@ -33,4 +34,14 @@ public class PropertyService {
         return key -> properties.get(key).test(number);
     }
 
+    Predicate<String> getBigTester(Number number) {
+        return new Predicate<>() {
+            private final Map<String, Boolean> cache = new HashMap<>();
+
+            @Override
+            public boolean test(String property) {
+                return cache.computeIfAbsent(property, key -> properties.get(key).test(number));
+            }
+        };
+    }
 }
