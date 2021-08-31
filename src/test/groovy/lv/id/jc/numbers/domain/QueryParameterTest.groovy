@@ -20,6 +20,7 @@ class QueryParameterTest extends Specification {
         "odd"          || "odd"    | false
         "-even"        || "even"   | true
         "-odd"         || "odd"    | true
+        ""             || ""       | false
     }
 
 }
