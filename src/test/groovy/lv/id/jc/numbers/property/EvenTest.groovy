@@ -12,7 +12,7 @@ class EvenTest extends Specification {
         property.test(number as long)
 
         where:
-        number << [2, 4, 14, 40, 10, 18652, 453066, 4000]
+        number << [2, 4, 8, 10, 12, 18, 22, 36]
     }
 
     def 'expects that #number is not an even number'() {
@@ -20,6 +20,6 @@ class EvenTest extends Specification {
         !property.test(number as long)
 
         where:
-        number << [1, 3, 7, 11, 19, 5221, 145, 31]
+        number << [1, 3, 7, 11, 19, 21, 31, 49]
     }
 }
